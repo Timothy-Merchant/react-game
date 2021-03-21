@@ -10,13 +10,13 @@ import monk from '../assets/Monk.png';
 const AvatarCarousel = () => {
 
     const imageSize = {
-        width: 150 + "px",
+        width: 30 + "rem",
     }
 
     return (
         <>
             <div className="container">
-                <Carousel interval={null}>
+                <Carousel style={imageSize} interval={null}>
                     <Carousel.Item>
                         <img style={imageSize} className="d-block w-100" src={druid} alt="First slide" />
                         <Carousel.Caption>
