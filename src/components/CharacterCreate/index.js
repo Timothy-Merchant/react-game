@@ -1,10 +1,17 @@
 import { connect } from "react-redux";
 import CharacterCreate from "./CharacterCreate";
+import { changeGender } from "../../data/actions/state"
 
 const mapStateToProps = state => {
     return {
-        // languages: state.language === "en" ? languages.en : languages.jp,
+        gender: state.gender
     };
 };
 
-export default connect(mapStateToProps)(CharacterCreate);
+const mapDispatchToProps = dispatch => {
+    return {
+        changeGender: (data) => dispatch(changeGender(data))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CharacterCreate);

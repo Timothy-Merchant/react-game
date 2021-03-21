@@ -1,6 +1,6 @@
-export const reset = (resetType) => {
+export const changeGender = (data) => {
     return {
-        type: "RESET",
-        resetType: resetType
+        type: "CHANGE_GENDER",
+        newGender: data
     }
 }

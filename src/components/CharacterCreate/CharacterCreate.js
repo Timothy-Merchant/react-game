@@ -1,7 +1,7 @@
 import { Col, Row, Form, Button } from "react-bootstrap";
-import AvatarCarousel from "../AvatarCarousel/AvatarCarousel"
+import Avatar from "../Avatar"
 
-const CharacterCreate = () => {
+const CharacterCreate = ({ changeGender, gender }) => {
 
     return (
         <>
@@ -10,10 +10,9 @@ const CharacterCreate = () => {
                     <Row>
                         <Col>
                             <Form.Group>
-                                <AvatarCarousel />
+                                <Avatar />
                             </Form.Group>
                         </Col>
-
                         <Col>
                             <Form.Group controlId="exampleForm.ControlInput1">
                                 <Form.Label>Name</Form.Label>
@@ -23,20 +22,22 @@ const CharacterCreate = () => {
                                 <Col>
                                     <fieldset>
                                         <Form.Group>
-                                            <Form.Label>
-                                                Gender
-                                            </Form.Label>
+                                            <Form.Label>Gender</Form.Label>
                                             <Form.Check
+                                                onChange={() => changeGender("male")}
                                                 type="radio"
                                                 label="Male"
-                                                name="formHorizontalRadios"
-                                                id="formHorizontalRadios1"
+                                                name="gender"
+                                                id="male"
+                                                checked={gender === "male"}
                                             />
                                             <Form.Check
+                                                onChange={() => changeGender("female")}
                                                 type="radio"
                                                 label="Female"
-                                                name="formHorizontalRadios"
-                                                id="formHorizontalRadios2"
+                                                name="gender"
+                                                id="female"
+                                                checked={gender === "female"}
                                             />
                                         </Form.Group>
                                     </fieldset>
@@ -47,48 +48,13 @@ const CharacterCreate = () => {
                                             <Form.Label>
                                                 Job
                                     </Form.Label>
-                                            <Form.Check
-                                                type="radio"
-                                                label="Knight"
-                                                name="formHorizontalRadios"
-                                                id="formHorizontalRadios1"
-                                            />
-                                            <Form.Check
-                                                type="radio"
-                                                label="Mage"
-                                                name="formHorizontalRadios"
-                                                id="formHorizontalRadios2"
-                                            />
-                                            <Form.Check
-                                                type="radio"
-                                                label="Ranger"
-                                                name="formHorizontalRadios"
-                                                id="formHorizontalRadios2"
-                                            />
-                                            <Form.Check
-                                                type="radio"
-                                                label="Warrior"
-                                                name="formHorizontalRadios"
-                                                id="formHorizontalRadios2"
-                                            />
-                                            <Form.Check
-                                                type="radio"
-                                                label="Thief"
-                                                name="formHorizontalRadios"
-                                                id="formHorizontalRadios2"
-                                            />
-                                            <Form.Check
-                                                type="radio"
-                                                label="Druid"
-                                                name="formHorizontalRadios"
-                                                id="formHorizontalRadios2"
-                                            />
-                                            <Form.Check
-                                                type="radio"
-                                                label="Monk"
-                                                name="formHorizontalRadios"
-                                                id="formHorizontalRadios2"
-                                            />
+                                            <Form.Check type="radio" label="Knight" name="Jobs" id="Knight" />
+                                            <Form.Check type="radio" label="Mage" name="Jobs" id="Mage" />
+                                            <Form.Check type="radio" label="Ranger" name="Jobs" id="Ranger" />
+                                            <Form.Check type="radio" label="Warrior" name="Jobs" id="Warrior" />
+                                            <Form.Check type="radio" label="Thief" name="Jobs" id="Thief" />
+                                            <Form.Check type="radio" label="Druid" name="Jobs" id="Druid" />
+                                            <Form.Check type="radio" label="Monk" name="Jobs" id="Monk" />
                                         </Form.Group>
                                     </fieldset>
                                 </Col>
