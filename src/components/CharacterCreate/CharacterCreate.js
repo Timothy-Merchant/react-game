@@ -1,5 +1,6 @@
 import { Col, Row, Form, Button } from "react-bootstrap";
 import Avatar from "../Avatar"
+import colors from "../../colors.json"
 
 const CharacterCreate = ({ changeGender, changeJob, gender, job }) => {
 
@@ -7,6 +8,13 @@ const CharacterCreate = ({ changeGender, changeJob, gender, job }) => {
         <>
             <div className="container">
                 <Form>
+                    <Row>
+                        <Col>
+                            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: 1 + "rem"}}>
+                                <h1>Create Party</h1>
+                            </div>
+                        </Col>
+                    </Row>
                     <Row>
                         <Col>
                             <Form.Group>
@@ -98,8 +106,29 @@ const CharacterCreate = ({ changeGender, changeJob, gender, job }) => {
                                     </fieldset>
                                 </Col>
                             </Row>
-                            <Form.Group>
-                                <Button type="submit" className="btn btn-primary">Start Adventure!</Button>
+                            <Row>
+                                <p>Blah blah blah</p>
+                            </Row>
+                        </Col>
+
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Form.Group style={{ display: "flex", justifyContent: "center" }}>
+
+                            </Form.Group>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Form.Group style={{ display: "flex", justifyContent: "center" }}>
+                                <Button type="submit" style={{
+                                    width: 50 + "%",
+                                    alignItems: "center",
+                                    fontSize: 30 + "px",
+                                    backgroundColor: colors["4tan"],
+                                    borderColor: colors["4tan"]
+                                }}>Add to Party</Button>
                             </Form.Group>
                         </Col>
                     </Row>
