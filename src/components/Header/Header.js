@@ -1,8 +1,14 @@
 const Header = () => {
 
     return (
-        <header className="jumbotron mt-4 mb-0">
-            <h1>Hello World</h1>
+        <header>
+            <div style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+            }}>
+                <h1>Adventure Game</h1>
+            </div>
         </header>
     )
 }
