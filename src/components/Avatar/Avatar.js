@@ -18,10 +18,22 @@ const Avatar = ({ currentAvatar, gender }) => {
 
     const maleAvatars = {
         knight: knightM,
+        mage: mageM,
+        warrior: warriorM,
+        druid: druidM,
+        thief: thiefM,
+        ranger: rangerM,
+        monk: monkM,
     }
 
     const femaleAvatars = {
         knight: knightF,
+        mage: mageF,
+        warrior: warriorF,
+        druid: druidF,
+        thief: thiefF,
+        ranger: rangerF,
+        monk: monkF,
     }
 
     const imageStyle = {

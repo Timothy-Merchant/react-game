@@ -1,7 +1,7 @@
 import { Col, Row, Form, Button } from "react-bootstrap";
 import Avatar from "../Avatar"
 
-const CharacterCreate = ({ changeGender, gender }) => {
+const CharacterCreate = ({ changeGender, changeJob, gender, job }) => {
 
     return (
         <>
@@ -48,13 +48,13 @@ const CharacterCreate = ({ changeGender, gender }) => {
                                             <Form.Label>
                                                 Job
                                     </Form.Label>
-                                            <Form.Check type="radio" label="Knight" name="Jobs" id="Knight" />
-                                            <Form.Check type="radio" label="Mage" name="Jobs" id="Mage" />
-                                            <Form.Check type="radio" label="Ranger" name="Jobs" id="Ranger" />
-                                            <Form.Check type="radio" label="Warrior" name="Jobs" id="Warrior" />
-                                            <Form.Check type="radio" label="Thief" name="Jobs" id="Thief" />
-                                            <Form.Check type="radio" label="Druid" name="Jobs" id="Druid" />
-                                            <Form.Check type="radio" label="Monk" name="Jobs" id="Monk" />
+                                            <Form.Check type="radio" label="Knight" name="Jobs" id="Knight" checked={job === "knight"} onChange={() => changeJob("knight")} />
+                                            <Form.Check type="radio" label="Mage" name="Jobs" id="Mage" checked={job === "mage"} onChange={() => changeJob("mage")} />
+                                            <Form.Check type="radio" label="Ranger" name="Jobs" id="Ranger" checked={job === "ranger"} onChange={() => changeJob("ranger")} />
+                                            <Form.Check type="radio" label="Warrior" name="Jobs" id="Warrior" checked={job === "warrior"} onChange={() => changeJob("warrior")} />
+                                            <Form.Check type="radio" label="Thief" name="Jobs" id="Thief" checked={job === "thief"} onChange={() => changeJob("thief")} />
+                                            <Form.Check type="radio" label="Druid" name="Jobs" id="Druid" checked={job === "druid"} onChange={() => changeJob("druid")} />
+                                            <Form.Check type="radio" label="Monk" name="Jobs" id="Monk" checked={job === "monk"} onChange={() => changeJob("monk")} />
                                         </Form.Group>
                                     </fieldset>
                                 </Col>

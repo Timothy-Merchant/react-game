@@ -3,7 +3,7 @@ import Avatar from "./Avatar";
 
 const mapStateToProps = state => {
     return {
-        currentAvatar: state.currentAvatar,
+        currentAvatar: state.job,
         gender: state.gender
     };
 };

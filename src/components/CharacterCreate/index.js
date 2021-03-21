@@ -1,16 +1,18 @@
 import { connect } from "react-redux";
 import CharacterCreate from "./CharacterCreate";
-import { changeGender } from "../../data/actions/state"
+import { changeGender, changeJob } from "../../data/actions/state"
 
 const mapStateToProps = state => {
     return {
-        gender: state.gender
+        gender: state.gender,
+        job: state.job
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        changeGender: (data) => dispatch(changeGender(data))
+        changeGender: (data) => dispatch(changeGender(data)),
+        changeJob: (data) => dispatch(changeJob(data))
     };
 };
 

@@ -1,7 +1,7 @@
 const initial = {
     gameStarted: false,
-    currentAvatar: "knight",
-    gender: "male"
+    job: "knight",
+    gender: "male"    
 };
 
 export default initial

@@ -4,3 +4,10 @@ export const changeGender = (data) => {
         newGender: data
     }
 }
+
+export const changeJob = (data) => {
+    return {
+        type: "CHANGE_JOB",
+        newJob: data
+    }
+}
