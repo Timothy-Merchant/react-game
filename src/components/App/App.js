@@ -1,6 +1,6 @@
 import Header from "../Header";
 import CharacterCreate from "../CharacterCreate";
-import Roster from "../Roster/Roster";
+import Roster from "../Roster";
 import colors from "../../colors.json";
 
 const App = () => {

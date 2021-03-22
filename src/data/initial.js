@@ -4,7 +4,7 @@ const initial = {
         job: "knight",
         gender: "male"
     },
-    party: [],
+    party: [{ playerName: "fred" }, {playerName: "jo"}, {}, {}],
 };
 
 export default initial
