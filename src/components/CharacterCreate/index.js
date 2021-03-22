@@ -4,8 +4,8 @@ import { changeGender, changeJob } from "../../data/actions/state"
 
 const mapStateToProps = state => {
     return {
-        gender: state.gender,
-        job: state.job
+        gender: state.characterCreation.gender,
+        job: state.characterCreation.job
     };
 };
 

@@ -38,7 +38,8 @@ const Avatar = ({ currentAvatar, gender }) => {
     }
 
     const imageStyle = {
-        width: 25 + "rem",
+        width: 22 + "rem",
+        height: 28 + "rem",
         border: "solid black 1px",
         background: colors["4tan"]
     }

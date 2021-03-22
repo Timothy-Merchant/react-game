@@ -1,7 +1,10 @@
 const initial = {
     gameStarted: false,
-    job: "knight",
-    gender: "male"    
+    characterCreation: {
+        job: "knight",
+        gender: "male"
+    },
+    party: [],
 };
 
 export default initial

@@ -126,8 +126,9 @@ const CharacterCreate = ({ changeGender, changeJob, gender, job }) => {
                                     width: 50 + "%",
                                     alignItems: "center",
                                     fontSize: 30 + "px",
-                                    backgroundColor: colors["4tan"],
-                                    borderColor: colors["4tan"]
+                                    backgroundColor: colors["1olive"],
+                                    borderColor: colors["4tan"],
+                                    color: colors["5beige"]
                                 }}>Add to Party</Button>
                             </Form.Group>
                         </Col>
