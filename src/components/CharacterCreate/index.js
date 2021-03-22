@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import CharacterCreate from "./CharacterCreate";
-import { changeGender, changeJob } from "../../data/actions/state"
+import { changeGender, changeJob, addPartyMember } from "../../data/actions/state"
 
 const mapStateToProps = state => {
     return {
@@ -12,7 +12,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         changeGender: (data) => dispatch(changeGender(data)),
-        changeJob: (data) => dispatch(changeJob(data))
+        changeJob: (data) => dispatch(changeJob(data)),
+        addPartyMember: () => dispatch(addPartyMember())
     };
 };
 

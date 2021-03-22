@@ -3,7 +3,7 @@ import Roster from "./Roster";
 
 const mapStateToProps = state => {
     return {
-        party: state.party
+        party: state.party        
     }
 }
 

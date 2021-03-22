@@ -11,3 +11,9 @@ export const changeJob = (data) => {
         newJob: data
     }
 }
+
+export const addPartyMember = () => {
+    return {
+        type: "ADD_PARTY_MEMBER",
+    }
+}

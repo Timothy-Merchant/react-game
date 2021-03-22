@@ -2,7 +2,7 @@ import { Col, Row, Form, Button } from "react-bootstrap";
 import Avatar from "../Avatar"
 import colors from "../../colors.json"
 
-const CharacterCreate = ({ changeGender, changeJob, gender, job }) => {
+const CharacterCreate = ({ addPartyMember, changeGender, changeJob, gender, job }) => {
 
     return (
         <>
@@ -122,7 +122,7 @@ const CharacterCreate = ({ changeGender, changeJob, gender, job }) => {
                     <Row>
                         <Col>
                             <Form.Group style={{ display: "flex", justifyContent: "center" }}>
-                                <Button type="submit" style={{
+                                <Button onClick={addPartyMember} type="submit" style={{
                                     width: 50 + "%",
                                     alignItems: "center",
                                     fontSize: 30 + "px",

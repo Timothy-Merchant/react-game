@@ -13,7 +13,15 @@ const reducer = (state, action) => {
                 ...state.characterCreation,
                 job: action.newJob,
             }
-        };;
+        };
+        case "ADD_PARTY_MEMBER": return {
+            ...state,
+            party: [
+                ...state.party,
+                { ...state.characterCreation }
+            ]
+
+        }
         default: return state;
     }
 };
